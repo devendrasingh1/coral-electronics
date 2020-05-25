@@ -9,15 +9,15 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 ::-moz-selection{
-	background-color:#fb1050;
+	background-color:#2e48a5;
 	color:#ffffff;
 }
 ::selection{
-	background-color:#fb1050;
+	background-color:#2e48a5;
 	color:#ffffff;
 }
 ::-webkit-selection {
-	background-color:#fb1050;
+	background-color:#2e48a5;
 	color:#ffffff;
 }
 h1, h2, h3, h4, h5{
@@ -179,14 +179,14 @@ img{
 }
 .radio_box .r_text {
     padding-left: 25px;
-    color: #555555;
+    color: #252b33;
     display: block;
 }
 .radio_box label input[type=radio]:checked ~ .r_check{
-    border-color: #fb1050;
+    border-color: #2e48a5;
 }
 .radio_box label input[type=radio]:checked ~ .r_check:after{
-    background-color: #fb1050;
+    background-color: #2e48a5;
 }
 /*=== radio box css End ===*/
 /*== check box css ==*/
@@ -209,7 +209,7 @@ img{
     -webkit-transition: all ease-in 0.25s;
     -moz-transition: all ease-in 0.25s;
     vertical-align: middle;
-    margin-top: 1px;
+    margin-top: 4px;
 }
 .check_box .c_box:after {
     position: absolute;
@@ -218,8 +218,8 @@ img{
     top: 3px;
     width: 10px;
     height: 5px;
-    border-left: 2px solid #fb1050;
-    border-bottom: 2px solid #fb1050;
+    border-left: 2px solid #2e48a5;
+    border-bottom: 2px solid #2e48a5;
     visibility:hidden;
     opacity:0;
     transition:all ease-in 0.25s;
@@ -228,13 +228,13 @@ img{
 }
 .check_box .c_text {
     display: block;
-    color: #000000;
-    font-size: 14px;
+    color: #252b33;
     text-transform: capitalize;
     padding-left: 22px;
+    /* font-weight: 600; */
 }
 .check_box input[type="checkbox"]:checked ~ .c_box{
-    border-color: #fb1050;
+    border-color: #2e48a5;
 }
 .check_box input[type="checkbox"]:checked ~ .c_box:after{
     visibility:visible;
@@ -267,7 +267,7 @@ img{
 }
 
 .color_1 {
-   color: #fb1050;
+   color: #2e48a5;
 }
 .color_2 {
    color: #a0ce4e;
@@ -279,7 +279,7 @@ img{
     color: #f5a91f;
 }
 .blue_bg {
-    background: #fb1050;
+    background: #2e48a5;
 }
 .green_bg {
     background: #a0ce4e;
@@ -334,7 +334,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     width: auto;
 }
 .site_button {
-   	background: #fb1050;
+   	background: #2e48a5;
     color: #fff;
     font-size: 15px;
     border-radius: 2em;
@@ -351,12 +351,12 @@ button:focus, input:focus, select:focus, textarea:focus{
 .site_button:hover {
 	text-decoration: none;
 	color:#ffffff;
-	border-color:#252b33;
-	background-color:#252b33;
+	border-color:#f5a91f;
+	background-color:#f5a91f;
 }
 .site_button_white {
     background-color: #ffffff;
-    color: #fb1050;
+    color: #2e48a5;
     font-size: 15px;
     border-radius: 2em;
     text-align: center;
@@ -400,13 +400,74 @@ button:focus, input:focus, select:focus, textarea:focus{
 	width:100%;
 }
 /*=== common css End ===*/
+/*==== Section Heading css End  ====*/
+.heading_section {
+	display:inline-block;
+	width:100%;
+	text-align:center;
+}
+.heading_section h2 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #f5a91f;
+    display: inline-block;
+    position: relative;
+	padding-bottom:10px;
+}
+.heading_section h2:after, 
+.heading_section h2:before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    width: 70px;
+    background: #f5a91f;
+    margin-left: -35px;
+}
+.heading_section h2:after {
+    bottom: -4px;
+    margin-left: -14px;
+}
+.white_heading h2{
+	color: #ffffff;
+}
+.white_heading h2:before, .white_heading h2:after{
+    background: #ffffff;
+}
+.section_text_one h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.section_text_one p {
+    font-size: 16px;
+    line-height: 29px;
+    font-family: 'Poppins', sans-serif;
+}
+.big_caption_box .subheading {
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.big_caption_box h1 {
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 56px;
+}
+/*==== Section Heading css End  ====*/
 /*=== Modal css Start ===*/
 .modal-header {
     display: inline-block;
     width: 100%;
     padding: 10px 20px 10px 10px;
     position: relative;
-    background: #fb1050;
+    background: #2e48a5;
 }
 .modal-header .modal-title {
     font-size: 16px;
@@ -442,7 +503,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 	-webkit-transition:all ease-in 0.25s;
 	-moz-transition:all ease-in 0.25s;
 	font-size: 18px;
-	background: #fb1050;
+	background: #2e48a5;
     width: 25px;
     height: 25px;
     text-align: center;
@@ -475,7 +536,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     height: 60px;
     border-radius: 50%;
     border: 7px solid #dadada;
-    border-top-color: #fb1050;
+    border-top-color: #2e48a5;
     top: 50%;
     left: 50%;
     margin-top: -30px;
@@ -504,7 +565,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     position: relative;
     margin: 0;
     background-color: #ffffff;
-    color: #fb1050;
+    color: #2e48a5;
     border: 1px solid #ffffff;
     text-transform: capitalize;
     padding: 10px 20px;
@@ -517,8 +578,8 @@ button:focus, input:focus, select:focus, textarea:focus{
     margin-left: -3px;
 }
 .tabs_menu > li.active {
-	border-color:#fb1050;
-    background-color: #fb1050;
+	border-color:#2e48a5;
+    background-color: #2e48a5;
     color: #fff;
 }
 .tab_content_cover {
@@ -612,7 +673,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     display: block;
 }
 .sc_logo > a img {
-    max-height: 60px;
+	max-width:150px;
 }
 .nav_toggle {
     float: left;
@@ -629,7 +690,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 .nav_toggle i {
     float: left;
     width: 100%;
-    background: #fb1050;
+    background: #2e48a5;
     height: 3px;
     border-radius: 2em;
     -webkit-transition: all 500ms cubic-bezier(0.480, 0, 0.535, 1);
@@ -724,8 +785,8 @@ button:focus, input:focus, select:focus, textarea:focus{
     text-decoration: none;
     border-radius: 2em;
     background: transparent;
-    color: #fb1050;
-    border: 1px solid #fb1050;
+    color: #2e48a5;
+    border: 1px solid #2e48a5;
     font-size: 14px;
     width: 35px;
     height: 35px;
@@ -733,14 +794,14 @@ button:focus, input:focus, select:focus, textarea:focus{
     margin: 0;
 }
 .nav_right .icons:hover {
-	background: #fb1050;
+	background: #2e48a5;
 	color:#ffffff;
 }
 .nav_right > ul > li > ul {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: #fb1050;
+    background-color: #2e48a5;
     min-width: 150px;
     box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.20);
     transform: translateY(30px);
@@ -764,7 +825,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     content: "";
     right: 10px;
     top: -10px;
-    border-bottom: 10px solid #fb1050;
+    border-bottom: 10px solid #2e48a5;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
 }
@@ -781,7 +842,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     display: block;
 }
 .nav_right > ul > li > ul > li a:hover {
-    color: #fb1050;
+    color: #2e48a5;
     background: #fff;
 }
 .nav_right > ul > li:hover > ul {
@@ -827,7 +888,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 }
 .navigation_menu > ul> li > a:hover, 
 .navigation_menu > ul> li > a.active {
-    color: #fb1050;
+    color: #2e48a5;
 }
 /* == submenu css == */
 .navigation_menu > ul > li > ul {
@@ -852,14 +913,14 @@ button:focus, input:focus, select:focus, textarea:focus{
     padding: 0;
     list-style: none;
     text-align: left;
-    border-top: 1px solid #fb1050;
+    border-top: 1px solid #2e48a5;
 }
 .navigation_menu > ul > li > ul:after {
     position: absolute;
     content: "";
     left: 10px;
     top: -10px;
-    border-bottom: 10px solid #fb1050;
+    border-bottom: 10px solid #2e48a5;
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
 }
@@ -881,7 +942,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 }
 .navigation_menu > ul > li > ul > li > a:hover{
     color: #ffffff;
-	background: #fb1050;
+	background: #2e48a5;
 }
 .navigation_menu > ul > li:hover > ul {
 	display: block;
@@ -991,7 +1052,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     display: inline-block;
 }
 .mega_menu ul > li > a:hover {
-    color: #fb1050;
+    color: #2e48a5;
 }
 .mega_menu_col {
     float: left;
@@ -1040,7 +1101,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     color: inherit;
 }
 .mega_link_box:hover .contents h5{
-	color:#fb1050;
+	color:#2e48a5;
 }
 .mega_menu_bottom {
     width: 100%;
@@ -1144,6 +1205,12 @@ button:focus, input:focus, select:focus, textarea:focus{
 }
 /*==== brand slider css End ====*/
 /*==== product slider css start ====*/
+.product_items {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+}
 .product_items .overlay {
     opacity: 0;
 	visibility:hidden;
@@ -1160,21 +1227,22 @@ button:focus, input:focus, select:focus, textarea:focus{
     padding-top: 17px;
 }
 .product_items .product_desc h4 {
-    font-size: 19px;
+    font-size: 18px;
     margin-top: 0;
     margin-bottom: 11px;
     font-weight: 600;
     text-transform: capitalize;
+    font-family: 'Lato', sans-serif;
 }
 .product_items .product_desc h4 a {
    color: #252b33;
     text-decoration: none;
 }
 .product_items .product_desc h4 a:hover {
-    color: #fb1050;
+    color: #2e48a5;
 }
 .product_desc .amount {
-    color: #fb1050;
+    color: #2e48a5;
     font-size: 18px;
     font-weight: 600;
     font-family: 'Lato', sans-serif;
@@ -1188,7 +1256,47 @@ button:focus, input:focus, select:focus, textarea:focus{
     -ms-transform: scale3d(1, 1, 1);
     -o-transform: scale3d(1, 1, 1);
 }
+.product_slider .product_items{
+	margin-bottom:0;
+}
 /*==== product slider css End ====*/
+/*==== pagination css start ====*/
+.pagination_wrap {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+.pagination_wrap > ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: inline-flex;
+}
+.pagination_wrap > ul > li {
+    float: left;
+}
+.pagination_wrap > ul > li a {
+    margin: 0 2px;
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    color: #404040;
+    border: 1px solid #d9d9d9;
+    background: transparent;
+    height: 37px;
+    width: 37px;
+    line-height: 37px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.pagination_wrap > ul > li a:hover, .pagination_wrap > ul > li a.active {
+    color: #ffffff;
+    border-color:#2e48a5;
+    background: #2e48a5;
+}
+/*==== pagination css End ====*/
 /*==== offers banner css start ====*/
 .offers_banner_section .pad_0{
 	padding:0;
@@ -1238,6 +1346,73 @@ button:focus, input:focus, select:focus, textarea:focus{
     width:135px;
 }
 /*==== google play store section css End ====*/
+/*==== produt page sidebar css Start ====*/
+.product_sidebar_wrap{
+	float:left;
+	width:100%;
+}
+.filter_heading {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    color: #2e48a5;
+    margin-bottom: 10px;
+}
+.filter_heading i {
+    margin-right: 5px;
+    font-size: 15px;
+}
+.filter_heading h6 {
+    margin: 0;
+    font-size: 17px;
+    line-height: 24px;
+    color: #2e48a5;
+    font-weight: 500;
+    display: inline-block;
+}
+.filter_heading .mobile_text{
+	display:none;
+}
+.product_sidebar {
+    float: left;
+    width: 100%;
+}
+.p_widget {
+    display: inline-block;
+    width: 100%;
+	margin-bottom:15px;
+}
+.p_widget_title {
+    display: inline-block;
+    width: 100%;
+    background: #2e48a5;
+    color: #fff;
+    padding: 10px;
+	cursor:pointer;
+}
+.p_widget_title i {
+    float: right;
+    margin-top: 5px;
+}
+.p_widget .widget_txt {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-top: 0;
+    overflow-y: auto;
+    max-height: 250px;
+    display: none;
+}
+.p_widget:first-child .widget_txt {
+    display: block;
+}
+.product_sidebar .check_box label, 
+.product_sidebar .radio_box label {
+    width: 100%;
+    margin-bottom: 8px;
+	margin-right:0;
+    font-family: 'Lato', sans-serif;
+}
+/*==== produt page sidebar css End ====*/
 /*==== about css Start ====*/
 .about_text h5 {
     font-weight: 600;
@@ -1249,7 +1424,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     margin-top: 25px;
 }
 .about_text h5 span {
-    color: #fb1050;
+    color: #2e48a5;
 }
 .about_text p {
     font-size: 15px;
@@ -1303,7 +1478,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 .mfp-image-holder .mfp-close, 
 .mfp-iframe-holder .mfp-close { 
     color: #fff !important;
-    background: #fb1050 !important;
+    background: #2e48a5 !important;
     float: right;
     width: 40px;
     height: 35px;
@@ -1323,42 +1498,42 @@ button:focus, input:focus, select:focus, textarea:focus{
 	border-left: none;
 }
 .mfp-arrow-right:after {
-	border-left-color: #fb1050;
+	border-left-color: #2e48a5;
 }
 .mfp-arrow-left:before {
 	border-right: none;
 }
 .mfp-arrow-left:after {
-	border-right-color: #fb1050;
+	border-right-color: #2e48a5;
 }
 /*====== magnific popup gallery css =========*/
 /*==== page banner css Start ====*/
 .page_banner_section {
-    background-color: #fb1050;
+    background-color: #fff;
     position: relative;
-    padding-bottom: 25px;
-    padding-top: 65px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
 }
 .page_heading h3 {
-    color: #ffffff;
     margin: 6px 0;
     text-transform: capitalize;
-    font-size: 26px;
+    font-size: 20px;
     letter-spacing: 0.02em;
-	font-weight:600;
+    font-weight: 500;
 }
 .breadcrumb_wrapper {
     text-align: right;
 }
 .breadcrumb_wrapper .breadcrumb {
-    margin-bottom: 0;
-    background-color: #fb1050;
+    background-color: transparent;
     display: inline-block;
-    padding: 8px 17px;
+    padding: 0;
+    margin: 5px 0;
 }
 .breadcrumb_wrapper .breadcrumb > li {
     display: inline-block;
-    color: #fff;
+    color: #252b33;
     text-transform: capitalize;
     font-size: 13px;
     font-weight: 500;
@@ -1371,79 +1546,18 @@ button:focus, input:focus, select:focus, textarea:focus{
     left: -4px;
     position: absolute;
 }
-.breadcrumb_wrapper .breadcrumb > li > a{
-	color:#ffffff;
-	text-decoration:none;
+.breadcrumb_wrapper .breadcrumb > li > a {
+    color: #252b33;
+    text-decoration: none;
 }
 .breadcrumb > li > a i {
     margin-right: 4px;
     font-size: 15px;
 }
 .breadcrumb_wrapper .breadcrumb > li > a:hover{
-	color:#000000;
+	color:#2e48a5;
 }
 /*==== page banner css End ====*/
-.heading_section {
-	display:inline-block;
-	width:100%;
-	text-align:center;
-}
-.heading_section h2 {
-    margin: 0;
-    font-size: 30px;
-    font-weight: 600;
-    text-transform: capitalize;
-    color: #f5a91f;
-    display: inline-block;
-    position: relative;
-	padding-bottom:10px;
-}
-.heading_section h2:after, 
-.heading_section h2:before {
-    position: absolute;
-    content: "";
-    left: 50%;
-    bottom: 0;
-    height: 2px;
-    width: 70px;
-    background: #f5a91f;
-    margin-left: -35px;
-}
-.heading_section h2:after {
-    bottom: -4px;
-    margin-left: -14px;
-}
-.white_heading h2{
-	color: #ffffff;
-}
-.white_heading h2:before, .white_heading h2:after{
-    background: #ffffff;
-}
-.section_text_one h1 {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 50px;
-    margin-bottom: 20px;
-    text-transform: capitalize;
-}
-.section_text_one p {
-    font-size: 16px;
-    line-height: 29px;
-    font-family: 'Poppins', sans-serif;
-}
-.big_caption_box .subheading {
-    font-size: 18px;
-    text-transform: capitalize;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-.big_caption_box h1 {
-    font-size: 45px;
-    font-weight: 800;
-    line-height: 56px;
-}
-/*==== Section Heading css End  ====*/
-
 /*==== Faq page css End ====*/
 .accordion_panel {
     float: left;
@@ -1456,7 +1570,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 .accordion_heading {
     display: inline-block;
     width: 100%;
-    background: #fb1050;
+    background: #2e48a5;
     padding: 12px 30px 12px 10px;
     position: relative;
     border-radius: 4px;
@@ -1474,7 +1588,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     position: absolute;
     right: 5px;
     top: 10px;
-    color: #fb1050;
+    color: #2e48a5;
     background: #fff;
     width: 24px;
     height: 24px;
@@ -1544,7 +1658,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 .contact_form_cover {
     display: inline-block;
     width: 100%;
-    background: #fb1050;
+    background: #2e48a5;
     padding: 20px;
 }
 .contact_form_cover .contact_heading h3 {
@@ -1603,7 +1717,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 }
 .contact_form .submit_btn {
     background-color: #ffffff;
-    color: #fb1050;
+    color: #2e48a5;
     font-size: 15px;
     border-radius: 2em;
     border: 1px solid transparent;
@@ -1655,19 +1769,19 @@ button:focus, input:focus, select:focus, textarea:focus{
 	text-decoration:none;
 }
 .address_list > li a:hover{
-	color: #fb1050;
+	color: #2e48a5;
 }
 .address_list > li .ad_icon, .address_list > li div {
     display: table-cell;
     vertical-align: top;
 }
 .address_list > li i {
-    color: #fb1050;
+    color: #2e48a5;
     font-size: 18px;
     width: 40px;
     height: 40px;
     line-height: 40px;
-    background: #fb1050;
+    background: #2e48a5;
     color: #fff;
     border-radius: 50%;
     text-align: center;
@@ -1784,7 +1898,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 }
 .social_icons > a:hover {
     font-size: 16px;
-    color: #fb1050;
+    color: #ffffff;
     text-decoration: none;
 }
 .footer_widget .address_list > li{
@@ -1805,7 +1919,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     font-weight: 400;
 }
 .footer_widget .address_list > li div a:hover {
-    color: #fb1050;
+    color: #f5a91f;
 }
 .footer_widget .add_head {
     margin-top: 10px;
@@ -1813,7 +1927,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     color: #fff;
 }
 .newsletter_widget p {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 20px;
     margin-bottom: 17px;
 }
@@ -1848,7 +1962,7 @@ button:focus, input:focus, select:focus, textarea:focus{
 }
 .fixed_social_icons {
     position: fixed;
-    left: 15px;
+    left: 10px;
     top: 50%;
     width: 40px;
     text-align: center;
@@ -1865,7 +1979,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     text-align: center;
     margin: 3px 0px;
     color: #ffffff;
-    background: #fb1050;
+    background: #2e48a5;
     font-size: 20px;
     width: 40px;
     height: 40px;
@@ -1911,7 +2025,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     display: inline-block;
 }
 .single_post .post_detail h6 a:hover{
-    color: #fb1050;
+    color: #2e48a5;
 }
 .single_post .post_detail ul {
     list-style: none;
@@ -1953,7 +2067,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     text-decoration: none;
 }
 .copyright_text a:hover {
-    color: #fb1050;
+    color: #ffffff;
 }
 .footer_social{
 	text-align:right;
