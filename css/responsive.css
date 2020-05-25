@@ -336,7 +336,7 @@
 	
 	.filter_heading {
 		border: 1px solid #ccc;
-		padding: 6px 9px;
+		padding:0;
 	}
 	.filter_heading i {
 		font-size: 14px;
@@ -347,8 +347,9 @@
 	.filter_heading .desktop_text{
 		display:none;
 	}
-	.filter_heading .mobile_text{
-		display:inline-block;
+	.filter_heading .mobile_text {
+		display: inline-block;
+		padding: 6px 9px;
 	}
 	.product_sidebar {
 		position: fixed;
