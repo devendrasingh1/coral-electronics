@@ -202,6 +202,84 @@
 		animateIn: 'fadeIn',
 		animateOut: 'fadeOut'
 	});
+	//product sycronise carousel
+	$(document).ready(function() {
+	  var sync1 = $(".sync_product");
+	  var sync2 = $(".sync_thumbnail");
+	  var slidesPerPage = 4;
+	  var syncedSecondary = true;
+
+	  sync1.owlCarousel({
+		items : 1,
+		slideSpeed : 2000,
+		nav: true,
+		autoplay: false,
+		dots: false,
+		loop: true,
+		responsiveRefreshRate : 200,
+		navText: ['<i class="fa fa-angle-left">','<i class="fa fa-angle-right">'],
+	  }).on('changed.owl.carousel', syncPosition);
+
+	  sync2
+		.on('initialized.owl.carousel', function () {
+		  sync2.find(".owl-item").eq(0).addClass("current");
+		})
+		.owlCarousel({
+		items : slidesPerPage,
+		dots: false,
+		nav: true,
+		navText: ['<i class="fa fa-angle-left">','<i class="fa fa-angle-right">'],
+		smartSpeed: 200,
+		slideSpeed : 500,
+		slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
+		responsiveRefreshRate : 100
+	  }).on('changed.owl.carousel', syncPosition2);
+
+	  function syncPosition(el) {
+		//if you set loop to false, you have to restore this next line
+		//var current = el.item.index;
+		
+		//if you disable loop you have to comment this block
+		var count = el.item.count-1;
+		var current = Math.round(el.item.index - (el.item.count/2) - .5);
+		
+		if(current < 0) {
+		  current = count;
+		}
+		if(current > count) {
+		  current = 0;
+		}
+		
+		//end block
+
+		sync2
+		  .find(".owl-item")
+		  .removeClass("current")
+		  .eq(current)
+		  .addClass("current");
+		var onscreen = sync2.find('.owl-item.active').length - 1;
+		var start = sync2.find('.owl-item.active').first().index();
+		var end = sync2.find('.owl-item.active').last().index();
+		
+		if (current > end) {
+		  sync2.data('owl.carousel').to(current, 100, true);
+		}
+		if (current < start) {
+		  sync2.data('owl.carousel').to(current - onscreen, 100, true);
+		}
+	  }
+	  function syncPosition2(el) {
+		if(syncedSecondary) {
+		  var number = el.item.index;
+		  sync1.data('owl.carousel').to(number, 100, true);
+		}
+	  }
+	  sync2.on("click", ".owl-item", function(e){
+		e.preventDefault();
+		var number = $(this).index();
+		sync1.data('owl.carousel').to(number, 300, true);
+	  });
+	});
 	//popup gallery js
 	$('.gallery_popup').magnificPopup({
 		delegate: '.gallery_icon',
@@ -307,7 +385,7 @@
 	});
 	//open filter product sidebar
 	if(win_w < 992){
-		$(".filter_heading .mobile_text").on('click', function(e){
+		$(".filter_heading").on('click', function(e){
 			$(".product_sidebar").addClass("open");
 			e.stopPropagation();
 		});
@@ -320,5 +398,43 @@
 	}
 	$(".close").on('click', function(e){
 		$(this).parents(".modal").modal('hide');
+	});
+	//cart list open close js
+	$(".cart_open_icon").on("click", function(){
+		$(".cart_overlay_body").addClass("open");
+	});
+	$(".cart_close").on("click", function(){
+		$(".cart_overlay_body").removeClass("open");
+	});
+	//change product count on click
+	$('.minus').on("click",function () {
+		var $input = $(this).parent().find('input');
+		var count = parseInt($input.val(),10) - 1;
+		count = count < 1 ? 1 : count;
+		$input.val(count);
+		$input.change();
+		return false;
+	});
+	$('.plus').on("click",function () {
+		var $input = $(this).parent().find('input');
+		$input.val(parseInt($input.val(),10) + 1);
+		$input.change();
+		return false;
+	});
+	//smooth scroll body on click
+	$('a[href]').click(function(){
+		$('html, body').animate({
+		scrollTop: $( $.attr(this, 'href') ).offset().top
+		}, 1000);
+		return false;
+	});
+	//payment radio check
+	$('.payment_radio input').change(function(){
+		if ($(".card_pay_input").is(':checked')) {
+			$(".card_pay_form").slideDown(100);	
+		}
+		else{
+			$(".card_pay_form").slideUp(100);
+		}
 	});
 })(jQuery);

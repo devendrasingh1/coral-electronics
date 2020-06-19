@@ -403,6 +403,9 @@
 	.banner_slider {
 		margin-bottom: 20px;
 	}
+	.pro_summary {
+		margin-top: 30px;
+	}
 }
 @media(max-width:767px){
 	.sc_logo{
@@ -477,6 +480,29 @@
 	.filter_heading {
 		text-align: center;
 	}
+	.cart_overlay_offset{
+		width:100%;
+	}
+	.cart_offset_inner {
+		padding: 70px 20px 50px;
+	}
+	/* product number */
+	.shoping_cart_table .prod_number {
+		width: 92px;
+	}
+	.prod_number .minus, 
+	.prod_number .plus {
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		font-size: 20px;
+	}
+	.prod_number .quantity input {
+		height: 30px;
+		width: 30px;
+		font-size: 13px;
+	}
+	/* product number */
 }
 
 @media(max-width:480px){

@@ -214,14 +214,14 @@
 		<div class="row">
 			<div class="col-lg-6 col-md-12 col-12 bred_col">
 				<div class="page_heading">
-					<h3>Cancellation</h3>
+					<h3>Shopping Cart</h3>
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-12 col-12 bred_col">
 				<div class="breadcrumb_wrapper">
 					<ul class="breadcrumb">
 						<li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
-						<li>Cancellation</li>
+						<li>Shopping Cart</li>
 					</ul>
 				</div>
 			</div>
@@ -229,38 +229,251 @@
 	</div>
 </div>
 <!-- breadcrumb section End -->
-<!-- Privacy policy section start  -->
-<div class="sc_wrapper privacy_policy_page pad_top_bottom_50"> 
+<!-- shoping cart wrapper Start -->
+<div class="sc_wrapper shoping_checkout_page pad_top_bottom_60">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-12 col-12">
-				<div class="privacy_policy_text">
-					<h4>Cancellation by Coral Electronics</h4>
-					<p>The Company hereby informs the User that User's receipt of an electronic or other form of order confirmation does not signify the Company's acceptance of User's order, nor does it constitute confirmation of the Company's offer to sell. The Company reserves the right at any time after receipt of User's order to accept or decline User's order for any reason. User's order will be deemed accepted by the Company upon shipment of product(s).</p>
-					<p>Company may require additional verifications or information before accepting any order.</p>
-					<p>The Company shall have the right to refuse or cancel any orders placed for Products listed at an incorrect price, rebate or refund, or containing any other incorrect information or typographical errors.</p>
-					<p>The Company shall have the right to refuse or cancel any such orders whether or not the order has been confirmed and User's credit/ debit/ cash card charged. If User's credit/ debit/ cash card has already been charged for the purchase and User's order is cancelled, the Company shall immediately issue a credit to User's credit/ debit/ cash card account for the amount of the charge.</p>
-					<p>All free gifts, in original packing as delivered and unused condition, must be returned along with the Product in case of cancellation of order of the Product with which the free gift(s) is/are given.</p>
-
-					<h5>Cancellation by User</h5>
-					<ul>
-					<li><strong>Before Shipment:</strong> User can send a request to our customer support team on hello@coralelectronics.com from their registered email id with reason for cancellation and order details. In such cases, the order will be cancelled and the money for all prepaid orders will be refunded to you after 5% deduction within 2-5 business days after the cancellation request.</li>
-					<li><strong>After Shipment:</strong> Products orders already shipped cannot be cancelled under any circumstances; Coral Electronics shall have sole discretion to entertain any such request without any right to appeal.</li>
-					</ul>
-					<h5>Refund</h5>
-					<ul>
-					<li>For any item for which order has been placed and customer account has been charged, is found to be not available or non-deliverable refund to the customer shall be initiated automatically.</li>
-					<li>
-					For any item which is to be replaced to the customer as per company replacement policy is later found to be not available, company shall issue a refund for the product.</li>
-					<li>
-					In an event in which company has to refund the amount to customer after the product has been shipped due to any circumstance or reason, company has right and is entitled to deduct the shipping and reverse pickup shipping charges if any from the final refund amount.</li></ul>
+			<div class="col-lg-6 col-sm col-12">
+				<div class="shadow_box checkout_login_box">
+					<div class="checkout_heading">
+						<h5>Login</h5>
+					</div>
+					<div class="coral_e_form checkout_login">
+						<form>
+							<div class="form_group">
+								<input type="email" name="" placeholder="Login Id">
+							</div>
+							<div class="form_group">
+								<input type="password" name="" placeholder="Password">
+							</div>
+							<div class="form_group button_group">
+								<button type="submit" class="site_button login_btn">Login</button>
+								<a href="register.html" class="site_button register_btn">Register</a>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="cart_summary_dv shadow_box">
+					<div class="checkout_heading">
+						<h5>Summary</h5>
+					</div>
+					<table class="table">
+						<tr>
+							<td class="first">Order Total<td>
+							<td class="scnd">$200</td>
+						</tr>
+						<tr>
+							<td class="first">Shipping<td>
+							<td class="scnd">Free Shiping</td>
+						</tr>
+						<tr>
+							<td class="first">Discount Amount<td>
+							<td class="scnd">$00</td>
+						</tr>
+						<tr class="total">
+							<td class="first">Grand Total<td>
+							<td class="scnd">$200</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="col-lg-6 col-sm col-12">
+				<div class="shoping_checkout_div shadow_box">
+					<div class="checkout_heading">
+						<h5>Billing Details</h5>
+					</div>
+					<div class="checkout_form">
+						<div class="form_group width_50">
+							<input type="text" name="fname" placeholder="First Name">
+						</div>
+						<div class="form_group width_50">
+							<input type="text" name="lname" placeholder="Last Name">
+						</div>
+						<div class="form_group width_50">
+							<input type="email" name="email" placeholder="Email Address">
+						</div>
+						<div class="form_group width_50">
+							<input type="text" name="mobile_n" placeholder="Mobile No.">
+						</div>
+						<div class="form_group width_100">
+							<input type="text" name="c_name" placeholder="Company Name">
+						</div>
+						<div class="form_group width_100">
+							<select>
+								<option value="">Select Country</option>
+								<option value="1">China</option>
+								<option value="2">India</option>
+								<option value="3">Canada</option>
+								<option value="4">Pakistan</option>
+							</select>
+						</div>
+						<div class="form_group width_100">
+							<select>
+								<option value="">Select State</option>
+								<option value="1">Jammu Kashmir</option>
+								<option value="2">Punjab</option>
+								<option value="3">Rajasthan</option>
+								<option value="4">Madhya pradesh</option>
+							</select>
+						</div>
+						<div class="form_group width_100">
+							<select>
+								<option value="">Select City/Town</option>
+								<option value="1">Indore</option>
+								<option value="2">Amritsar</option>
+								<option value="3">Ujjain</option>
+								<option value="4">Jaipur</option>
+							</select>
+						</div>
+						<div class="form_group width_100">
+							<input type="text" name="postal_code" placeholder="Postcode/Zipcode">
+						</div>
+						
+						<div class="form_group width_100">
+							<textarea name="c_name" placeholder="Full Address"></textarea>
+						</div>
+					</div>
+					<div class="payment_transfer_dv">
+						<div class="checkout_heading">
+							<h5>Select Payment mode</h5>
+						</div>
+						<div class="radio_box payment_radio">
+							<label>
+								<input type="radio" name="payment_mode" value="Bank_transfer">
+								<span class="r_check"></span>
+								<span class="r_text"><i class="fas fa-university"></i>Bank Transfer</span>
+							</label>
+							<label>
+								<input type="radio" name="payment_mode" value="cash_delivery">
+								<span class="r_check"></span>
+								<span class="r_text"><i class="far fa-money-bill-alt"></i>Cash on Delivery</span>
+							</label>
+							<label>
+								<input class="card_pay_input" type="radio" name="payment_mode" value="card_pay">
+								<span class="r_check"></span>
+								<span class="r_text"><i class="fab fa-cc-paypal"></i>Paypal / Card Payment</span>
+							</label>
+						</div>
+						<div class="coral_e_form card_pay_form">
+							<div class="row">
+							  <div class="col-md-6 col-12">
+								<div class="form_group">
+									<label class="form_label">card number</label>
+									<input type="text" name="card_n" placeholder="XXXX XXXX">
+								</div>
+							  </div>
+							  <div class="col-md-6 col-12">
+								<div class="form_group">
+									<label class="form_label">card holder name</label>
+									<input type="text" name="card_name" placeholder="John Taylor">
+								</div>
+							  </div>
+							  <div class="col-md-6 col-12">
+								<div class="form_group">
+									<label class="form_label">Expiration</label>
+									<input type="text" name="user_id" placeholder="mm/yy">
+								</div>
+							  </div>
+							  <div class="col-md-6 col-12">
+								<div class="form_group">
+									<label class="form_label">cvv</label>
+									<input type="text" name="cvv" placeholder="Enter CVV">
+								</div>
+							  </div>
+							</div>
+						</div>
+						<div class="place_button">
+						  <button type="submit" class="site_button">Place Order</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- Privacy policy section start  -->
+<!-- shoping cart wrapper End -->
 <div class="clearfix"></div>
+<!-- search popup End -->
+<div class="search_popup">
+	<div class="modal-dialog modal-dialog-centered">
+		<div class="modal-content">
+			<div class="modal-body">
+				<div class="search_bar">
+					<form>
+					  <input type="text" class="search_input" placeholder="Search Products...">
+					  <button class="serach_icon"><i class="fa fa-search"></i></button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- search popup End -->
+<!-- Cart overlay start -->
+<div class="cart_overlay_body">
+	<div class="cart_overlay_offset">
+		<div class="cart_offset_inner">
+			<div class="cart_close">
+				<i class="fas fa-times"></i>
+			</div>
+			<!-- shopping wrap start -->
+			<div class="shp_cart_wrap">
+				<!-- list start -->
+				<div class="shp_cart_list">
+					<div class="cart_thumb">
+						<a href="#">
+						 <img src="images/product/product_1.jpg" alt="product images">
+						</a>
+					</div>
+					<div class="cart_details">
+					  <h4><a href="#">refrigerator</a></h4>
+					  <span class="qty">QTY: 2</span>
+					  <span class="pro_price">2000</span>
+					</div>
+					<!-- remove button -->
+					<div class="remove_btn">
+						<a href="#" title="Remove this item"><i class="fas fa-times"></i></a>
+					</div>
+					<!-- remove button -->
+				</div>
+				<!-- list end -->
+				<!-- list start -->
+				<div class="shp_cart_list">
+					<div class="cart_thumb">
+						<a href="#">
+						 <img src="images/product/product_2.jpg" alt="product images">
+						</a>
+					</div>
+					<div class="cart_details">
+					  <h4><a href="#">Washing Machines</a></h4>
+					  <span class="qty">QTY: 2</span>
+					  <span class="pro_price">1000</span>
+					</div>
+					<!-- remove button -->
+					<div class="remove_btn">
+						<a href="#" title="Remove this item"><i class="fas fa-times"></i></a>
+					</div>
+					<!-- remove button -->
+				</div>
+				<!-- list end -->
+			</div>
+			<!-- shopping wrap end -->
+			<!-- shopping total -->
+			<div class="shoping_total">
+				<div class="subtotal">Subtotal:</div>
+				<div class="total_price">$130.00</div>
+			</div>
+			<!-- shopping total -->
+			<!-- shopping buttons -->
+			<div class="shopping_btn">
+				<a href="shopping-cart.html">View Cart</a>
+				<a href="shopping-checkout.html">Checkout</a>
+			</div>
+			<!-- shopping buttons -->
+		</div>
+	</div>
+</div>
+<!-- Cart overlay End -->
 <!-- footer start -->
 <div class="footer_section">
     <div class="container">
@@ -367,23 +580,6 @@
 	</div>
 </div>
 <!-- footer bottom End -->
-<!-- search popup End -->
-<div class="search_popup">
-	<div class="modal-dialog modal-dialog-centered">
-		<div class="modal-content">
-			<div class="modal-body">
-				<div class="search_bar">
-					<form>
-					  <input type="text" class="search_input" placeholder="Search Products...">
-					  <button class="serach_icon"><i class="fa fa-search"></i></button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- search popup End -->
-<!-- Booking form  Modal -->
 <!-- jquery library js -->
 <script src="js/jquery.min.js"></script>
 <!-- jquery library js -->
