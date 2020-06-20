@@ -437,4 +437,29 @@
 			$(".card_pay_form").slideUp(100);
 		}
 	});
+	//My profile sidebar js
+	if(win_w < 992){
+		$(".prof_sidebar_open").on('click', function(e){
+			$(".myprofile_sidebar").addClass("open");
+			//e.stopPropagation();
+		});
+		$(".prof_sidebar_close").on('click', function(){
+			$(".myprofile_sidebar").removeClass("open");
+		});
+	}
+	//age Datepicker js
+	if ($(".datepicker").length > 0){
+		 $(".datepicker").datepicker({
+			dateFormat: "dd-mm-yy",
+		 });
+	}
+	//age Datepicker js
+	if ($(".age_datepicker").length > 0){
+		 $(".age_datepicker").datepicker({
+			dateFormat: "dd-mm-yy",
+			changeMonth: true,
+			changeYear: true,
+			yearRange: "-100:+0"
+		 });
+	}
 })(jQuery);

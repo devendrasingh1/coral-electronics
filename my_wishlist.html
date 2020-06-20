@@ -209,19 +209,19 @@
 </header>
 <!-- Header End -->
 <!-- breadcrumb section start -->
-<div class="sc_wrapper page_banner_section"> 
+<div class="sc_wrapper page_banner_section bg_gray"> 
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6 col-md-12 col-12 bred_col">
 				<div class="page_heading">
-					<h3>Cancellation</h3>
+					<h3>Change Password</h3>
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-12 col-12 bred_col">
 				<div class="breadcrumb_wrapper">
 					<ul class="breadcrumb">
 						<li><a href="index.html"><i class="fa fa-home"></i>Home</a></li>
-						<li>Cancellation</li>
+						<li>Change Password</li>
 					</ul>
 				</div>
 			</div>
@@ -229,37 +229,92 @@
 	</div>
 </div>
 <!-- breadcrumb section End -->
-<!-- Privacy policy section start  -->
-<div class="sc_wrapper privacy_policy_page pad_top_bottom_50"> 
+<!-- my profile Section start -->
+<div class="sc_wrapper myprofile_page_wrapper pad_top_30 pad_bottom_60 bg_gray"> 
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-12 col-12">
-				<div class="privacy_policy_text">
-					<h4>Cancellation by Coral Electronics</h4>
-					<p>The Company hereby informs the User that User's receipt of an electronic or other form of order confirmation does not signify the Company's acceptance of User's order, nor does it constitute confirmation of the Company's offer to sell. The Company reserves the right at any time after receipt of User's order to accept or decline User's order for any reason. User's order will be deemed accepted by the Company upon shipment of product(s).</p>
-					<p>Company may require additional verifications or information before accepting any order.</p>
-					<p>The Company shall have the right to refuse or cancel any orders placed for Products listed at an incorrect price, rebate or refund, or containing any other incorrect information or typographical errors.</p>
-					<p>The Company shall have the right to refuse or cancel any such orders whether or not the order has been confirmed and User's credit/ debit/ cash card charged. If User's credit/ debit/ cash card has already been charged for the purchase and User's order is cancelled, the Company shall immediately issue a credit to User's credit/ debit/ cash card account for the amount of the charge.</p>
-					<p>All free gifts, in original packing as delivered and unused condition, must be returned along with the Product in case of cancellation of order of the Product with which the free gift(s) is/are given.</p>
-
-					<h5>Cancellation by User</h5>
+			<!-- sidebar start -->
+			<div class="col-xl-3 col-lg-4 col-md-12 col-sm-12 col-12">
+				<div class="prof_sidebar_open">
+				  <span class="text"><i class="fa fa-bars"></i>Open Sidebar</span>
+				</div>
+				<div class="myprofile_sidebar shadow_box">
+					<div class="prof_sidebar_close">
+					  <span class="text"><i class="fa fa-arrow-left"></i>Close Sidebar</span>
+					</div>
 					<ul>
-					<li><strong>Before Shipment:</strong> User can send a request to our customer support team on hello@coralelectronics.com from their registered email id with reason for cancellation and order details. In such cases, the order will be cancelled and the money for all prepaid orders will be refunded to you after 5% deduction within 2-5 business days after the cancellation request.</li>
-					<li><strong>After Shipment:</strong> Products orders already shipped cannot be cancelled under any circumstances; Coral Electronics shall have sole discretion to entertain any such request without any right to appeal.</li>
+						<li>
+						  <a href="my_profile.html">
+						    <i class="fa fa-user"></i>Account Information
+						  </a>
+						</li>
+						<li><a href="my_order.html"><i class="fa fa-shopping-cart"></i>My Orders</a></li>
+						<li><a href="change_pass.html"><i class="fas fa-lock"></i>Change Password</a></li>
+						<li><a class="active" href="my_wishlist.html"><i class="fa fa-heart"></i>My wishlist</a></li>
+						<li><a href="request_form.html"><i class="fa fa-phone-alt"></i>Request/Complaint</a></li>
+						<li><a href="index.html"><i class="fa fa-sign-out-alt"></i>Logout</a></li>
 					</ul>
-					<h5>Refund</h5>
-					<ul>
-					<li>For any item for which order has been placed and customer account has been charged, is found to be not available or non-deliverable refund to the customer shall be initiated automatically.</li>
-					<li>
-					For any item which is to be replaced to the customer as per company replacement policy is later found to be not available, company shall issue a refund for the product.</li>
-					<li>
-					In an event in which company has to refund the amount to customer after the product has been shipped due to any circumstance or reason, company has right and is entitled to deduct the shipping and reverse pickup shipping charges if any from the final refund amount.</li></ul>
 				</div>
 			</div>
+			<!-- sidebar End -->
+			<!-- Content start -->
+			<div class="col-xl-9 col-lg-8 col-md-12 col-sm-12 col-12">
+				<div class="myprofile_right_content shadow_box">
+					<h4 class="myprofile_title">My Wishlist</h4>
+					<!-- info box start -->
+					<div class="usr_info_box">
+						<div class="info_heading">
+							<h5>Wishlist Products</h5>
+						</div>
+						<div class="usr_info_body">
+							<!-- Wish list wrap -->
+							<div class="wishlist_wrap">
+								<!-- list start -->
+								<div class="wishlist_row">
+									<div class="wish_thumb">
+										<a href="product-detail.html">
+										 <img src="images/product/product_1.jpg" alt="product images">
+										</a>
+									</div>
+									<div class="wish_details">
+									  <h4><a href="product-detail.html">refrigerator</a></h4>
+									  <span class="qty">QTY: 2</span>
+									  <span class="pro_price">2000</span>
+									</div>
+									<!-- remove button -->
+									<a href="#" title="Remove this item" class="remove_btn"><i class="fas fa-times"></i></a>
+									<!-- remove button -->
+								</div>
+								<!-- list end -->
+								<!-- list start -->
+								<div class="wishlist_row">
+									<div class="wish_thumb">
+										<a href="#">
+										 <img src="images/product/product_2.jpg" alt="product images">
+										</a>
+									</div>
+									<div class="wish_details">
+									  <h4><a href="product-detail.html">Washing Machines</a></h4>
+									  <span class="qty">QTY: 2</span>
+									  <span class="pro_price">1000</span>
+									</div>
+									<!-- remove button -->
+									<a href="#" title="Remove this item" class="remove_btn"><i class="fas fa-times"></i></a>
+									<!-- remove button -->
+								</div>
+								<!-- list end -->
+							</div>
+							<!-- Wish list wrap -->
+						</div>
+					</div>
+					<!-- info box End -->
+				</div>
+			</div>
+			<!-- Content End -->
 		</div>
 	</div>
 </div>
-<!-- Privacy policy section start  -->
+<!-- my profile Section End -->
 <div class="clearfix"></div>
 <!-- footer start -->
 <div class="footer_section">
@@ -383,7 +438,6 @@
 	</div>
 </div>
 <!-- search popup End -->
-<!-- Booking form  Modal -->
 <!-- jquery library js -->
 <script src="js/jquery.min.js"></script>
 <!-- jquery library js -->

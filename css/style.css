@@ -180,7 +180,6 @@ img{
 }
 .radio_box .r_text {
     padding-left: 25px;
-    color: #252b33;
     display: block;
 }
 .radio_box label input[type=radio]:checked ~ .r_check{
@@ -248,38 +247,10 @@ img{
 }
 /*== check box css ==*/
 /*== color css ==*/
-.bg_color_1 {
-    background: #ace6fd;
+.blue_bg_light{
+    background: #5a78e2;
 }
-.bg_color_2{
-	background: #cfe8e4;
-}
-.bg_color_3{
-	background: #ffd6bc;
-}
-.bg_color_4{
-	background: #caf9be;
-}
-.bg_color_5{
-	background: #fdd2f7;
-}
-.bg_color_6{
-	background: #dde5ef;
-}
-
-.color_1 {
-   color: #2e48a5;
-}
-.color_2 {
-   color: #a0ce4e;
-}
-.color_3 {
-    color: #00bea3;
-}
-.color_4 {
-    color: #f5a91f;
-}
-.blue_bg {
+.blue_bg_dark {
     background: #2e48a5;
 }
 .green_bg {
@@ -294,7 +265,7 @@ img{
 .red_bg{
     background: #ff4e4e;
 }
-.purple_bg{
+.yellow_bg{
     background: #f5a91f;
 }
 /*== color css ==*/
@@ -348,6 +319,9 @@ button:focus, input:focus, select:focus, textarea:focus{
     text-align: center;
     text-transform: capitalize;
 	border:none;
+}
+.site_button i {
+    margin-right: 5px;
 }
 .site_button:hover {
 	text-decoration: none;
@@ -1151,11 +1125,12 @@ button:focus, input:focus, select:focus, textarea:focus{
 	
 }
 .coral_e_form .form_group .form_label {
-    color: #81959e;
+    color: #252b33;
     font-size: 14px;
     margin-bottom: 8px;
     line-height: 17px;
     text-transform: capitalize;
+    font-weight: 500;
 }
 .coral_e_form .form_group .form-control, 
 .coral_e_form .form_group input, 
@@ -1166,6 +1141,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     font-size: 14px;
     width: 100%;
     border: 1px solid #ccc;
+	border-radius: 5px;
 }
 .coral_e_form .form_group textarea.form-control, 
 .coral_e_form .form_group textarea {
@@ -1174,7 +1150,12 @@ button:focus, input:focus, select:focus, textarea:focus{
 	resize:none;
 }
 .coral_e_form .form_group {
-    margin-bottom: 10px;
+    margin-bottom: 14px;
+    display: inline-block;
+    width: 100%;
+}
+.coral_e_form .submit_buttons {
+    margin-top: 10px;
 }
 /*== main form css End ==*/
 /*==== banner Section css Start ====*/
@@ -2699,18 +2680,26 @@ button:focus, input:focus, select:focus, textarea:focus{
     height: 100%;
     padding: 70px 40px 50px;
 }
+.cart_close {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 20px;
+    background: #2e48a5;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 42px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
 .shp_cart_wrap {
     width: 100%;
     display: inline-block;
     overflow-y: auto;
     max-height: 300px;
     overflow-x: hidden;
-}
-.cart_offset_inner {
-    width: 100%;
-    display: inline-block;
-    height: 100%;
-    padding: 70px 30px 50px;
 }
 .shp_cart_list {
     width: 100%;
@@ -2719,6 +2708,7 @@ button:focus, input:focus, select:focus, textarea:focus{
     padding-top: 10px;
     position: relative;
     border-bottom: 1px solid #555555;
+    padding-right: 15px;
 }
 .shp_cart_list .cart_thumb {
     margin-right: 20px;
@@ -2740,20 +2730,6 @@ button:focus, input:focus, select:focus, textarea:focus{
     top: 5px;
     font-size: 17px;
     color: #ffffff;
-}
-.cart_close {
-    position: absolute;
-    right: 20px;
-    top: 15px;
-    font-size: 20px;
-    background: #2e48a5;
-    color: #fff;
-    width: 40px;
-    height: 40px;
-    line-height: 42px;
-    border-radius: 50%;
-    text-align: center;
-    cursor: pointer;
 }
 .shp_cart_list .remove_btn a{
 	color:#ffffff;
@@ -2894,3 +2870,211 @@ button:focus, input:focus, select:focus, textarea:focus{
     color: #000000;
 }
 /*==== login css End ====*/
+/*==== My profile sidebar css Start ====*/
+.prof_sidebar_open {
+    text-transform: capitalize;
+    cursor: pointer;
+    width: 100%;
+    color: #252b33;
+    margin-bottom: 10px;
+    background: #fff;
+    padding: 8px;
+    font-weight: 500;
+    font-size: 16px;
+	display:none;
+}
+.prof_sidebar_open .text i {
+    margin-right: 9px;
+}
+
+.prof_sidebar_close {
+    text-transform: capitalize;
+    cursor: pointer;
+    width: 100%;
+    color: #252b33;
+    margin-bottom: 7px;
+    background: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    display: none;
+}
+.prof_sidebar_close .text i {
+    margin-right: 9px;
+}
+.myprofile_sidebar {
+    float: left;
+    width: 100%;
+    min-height: 250px;
+}
+.myprofile_sidebar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.myprofile_sidebar ul > li > a {
+    color: #81959e;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-decoration: none;
+    line-height: 21px;
+    display: inline-block;
+    width: 100%;
+    padding: 7px 0;
+    border-bottom: 1px solid #ccc;
+}
+.myprofile_sidebar ul > li > a:hover, 
+.myprofile_sidebar ul > li > a:focus, 
+.myprofile_sidebar ul > li > a.active {
+    color: #f5a91f;
+}
+.myprofile_sidebar ul > li:last-child > a {
+	border-bottom:none;
+}
+.myprofile_sidebar ul > li > a i {
+    margin-right: 10px;
+    color: #f5a91f;
+}
+/*==== My profile sidebar css End ====*/
+/*==== My profile contents css End ====*/
+.myprofile_right_content .myprofile_title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+.usr_info_box {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #ccc;
+	margin-bottom:20px;
+}
+.usr_info_box .info_heading {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 15px;
+    background: #f5a91f;
+}
+.usr_info_box .info_heading h5 {
+    float: left;
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+    margin: 0;
+}
+.usr_info_box .info_heading .right_side{
+	float:right;
+	color:#ffffff;
+}
+.usr_info_box .info_heading .infolink {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+.usr_info_box .info_heading .infolink i {
+    margin-right:4px;
+}
+.usr_info_body{
+	padding:15px;
+}
+.usr_info_body .gender_radio {
+    margin-top: 8px;
+}
+.user_address_row h5 {
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 11px;
+}
+.user_address_row .address_list > li .ad_icon {
+    float: left;
+    width: 30px;
+	line-height:inherit;
+}
+.user_address_row .address_list > li i {
+    font-size: 17px;
+    width: 30px;
+    background: transparent;
+    color: #2e48a5;
+    height: auto;
+    line-height: initial;
+}
+.user_address_row .address_list > li div {
+    padding-left: 35px;
+}
+.user_address_row .edit_btn {
+    margin-top: 15px;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 23px;
+}
+.my_address_modal .modal-dialog {
+    max-width: 600px;
+}
+/*==== My profile contents css End ====*/
+/*==== My wishlist css start ====*/
+.wishlist_wrap {
+    width: 100%;
+    display: inline-block;
+    overflow-y: auto;
+    max-height: 300px;
+    overflow-x: hidden;
+}
+.wishlist_row {
+    width: 100%;
+    display: inline-block;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    padding-right: 15px;
+}
+.wishlist_row .wish_thumb {
+    margin-right: 20px;
+    float: left;
+    width: 80px;
+}
+.wishlist_row .wish_thumb a{
+	display:block;
+}
+.wishlist_row .wish_thumb img {
+	max-width: 100%;
+}
+.wishlist_row .wish_details {
+    padding-left:90px;
+}
+.wishlist_row .remove_btn {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    color: #2e48a5;
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    line-height: 27px;
+    border: 2px solid;
+    text-align: center;
+    border-radius: 50%;
+	text-decoration:none;
+}
+.wishlist_row .wish_details h4 {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 0 10px;
+    text-transform: capitalize;
+}
+.wishlist_row .wish_details h4 a {
+    text-decoration: none;
+    color: #252b33;
+    text-transform: capitalize;
+}
+.wishlist_row .wish_details .qty {
+    display: block;
+    line-height: normal;
+    font-size: 14px;
+}
+.wishlist_row .wish_details .pro_price {
+    color: #f5a91f;
+    display: block;
+    letter-spacing: 1px;
+}
+/*==== My wishlist css End ====*/
